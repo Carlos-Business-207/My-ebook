@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000; /* texto preto */
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Cabeçalho (sem fundo cinza) */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  color: #000;
+  font-size: 2rem;
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #007BFF; /* azul */
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FFD700; /* dourado pepita para combinar com a capa */
+}
+
+/* Item ativo no menu */
+nav ul li a.active {
+  text-decoration: underline;
+  color: #FFD700;
+}
+
+/* Conteúdo */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Títulos */
+h2, h3 {
+  color: #000;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Listas */
+ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+/* Links normais */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botão centralizado e visível */
+.botao-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.botao {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none; /* tirar sublinhado */
+}
+
+.botao:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Rodapé opcional */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .botao {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    width: 90%;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+
+  ul {
+    margin-left: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Estilo para a imagem */
+.imagem {
+  width: auto;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo para títulos com ID */
+#importancia,
+#imediatismo,
+#começar,
+#aproveitar {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
