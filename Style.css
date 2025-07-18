@@ -27,7 +27,7 @@ header h1 {
 
 /* Menu de navegação */
 nav {
-  background-color: #808080; /* azul */
+  background-color: Red /* azul */
   padding: 0.8rem 1rem;
   text-align: center;
 }
@@ -141,7 +141,7 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
 }
@@ -149,7 +149,7 @@ footer {
 /* Estilo para a imagem */
 .imagem {
   width: auto;
-  height: 300px;
+  height: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
